@@ -1,0 +1,104 @@
+*{
+box-sizing: border-box;
+margin: 0;
+}
+body{
+    background-image: url("https://i.pinimg.com/originals/70/45/26/7045261074a625f94f66de3a86475fa6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 27, 39);
+    transition-property: all;
+    transition-duration: 0.5s; 
+    width: 100vw;
+}
+
+#container, #hetvege{
+    background-color: rgba(133, 184, 203, 0.774);
+    width: min-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+}
+#sor, #sorhetvege{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#adat, #adatnap{
+    width: 150px;
+    height: 50px;
+    background-color:rgba(29, 106, 150,0.6) ;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+#title{
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color:rgba(29, 106, 150,0.6) ;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+#adatnap{
+    background-color:rgba(14, 51, 65, 0.7) ;
+    font-weight: bold;
+}
+
+#sor div:first-of-type, #hetvege div:first-of-type{
+    margin-left: 0;
+}
+
+#gomb {
+    height: 200px;
+    width: 200px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 4px;
+    float: right;
+    margin: 20px;
+    transition-property: all;
+    transition-duration: 0.5s; 
+}
+@media only screen and (max-width: 1000px) {
+    #adat, #adatnap{
+      margin-left: 30px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    #adat, #adatnap{
+      margin-left: 10px;
+    }
+  }
+@media only screen and (max-width: 700px) {
+    #adat, #adatnap{
+      margin-left: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    #container{
+        flex-direction: column;
+    }
+  }
