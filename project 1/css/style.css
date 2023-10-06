@@ -42,7 +42,6 @@ body{
     margin-top: 20px;
     text-align: center;
     border-radius: 10px;
-    padding-top: 5px;
 }
 #title{
     width: fit-content;
@@ -62,7 +61,6 @@ body{
 #adatnap{
     background-color:rgba(14, 51, 65, 0.7) ;
     font-weight: bold;
-    padding-top: 15px;
 }
 
 #sor div:first-of-type, #hetvege div:first-of-type{
@@ -86,6 +84,7 @@ body{
 @media only screen and (max-width: 1000px) {
     #adat, #adatnap{
       margin-left: 30px;
+      width: 120px;
     }
   }
   @media only screen and (max-width: 900px) {
@@ -95,10 +94,16 @@ body{
   }
 @media only screen and (max-width: 700px) {
     #adat, #adatnap{
-      margin-left: 0px;
+      margin-left: 5px;
+      width: 100px;
     }
   }
-
+  @media only screen and (max-width: 590px) {
+    #adat, #adatnap{
+      margin-left: 2px;
+      width: 90px;
+    }
+  }
   @media only screen and (max-width: 850px) {
     #container{
         flex-direction: column;
